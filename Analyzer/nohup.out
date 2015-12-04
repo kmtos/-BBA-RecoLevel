@@ -1,0 +1,174 @@
+01-Dec-2015 15:32:06 CET  Initiating request to open file file:/afs/cern.ch/user/k/ktos/BoostedDiTau/CMSSW_7_4_1_patch1/src/BoostedTauAnalysis/CleanJets/OUTPUT/CleanJets_edmOuput.root
+01-Dec-2015 15:32:31 CET  Successfully opened file file:/afs/cern.ch/user/k/ktos/BoostedDiTau/CMSSW_7_4_1_patch1/src/BoostedTauAnalysis/CleanJets/OUTPUT/CleanJets_edmOuput.root
+Begin Job
+Begin processing the 1st record. Run 977, Event 69, LumiSection 1 at 01-Dec-2015 15:32:38.099 CET
+
+<------------THIS IS A NEW EVENT------------>
+%MSG-i GetByLabelWithoutRegistration:  GGHAnalyzer:ggh 01-Dec-2015 15:32:38 CET  Run: 977 Event: 69
+::getByLabel without corresponding call to consumes or mayConsumes for this module.
+  type: std::vector<reco::GenParticle>
+  module label: genParticles
+  product instance name: ''
+  process name: ''
+
+%MSG
+%MSG-i GetByLabelWithoutRegistration:  GGHAnalyzer:ggh 01-Dec-2015 15:32:38 CET  Run: 977 Event: 69
+::getByLabel without corresponding call to consumes or mayConsumes for this module.
+  type: std::vector<reco::PFJet>
+  module label: ak4PFJets
+  product instance name: ''
+  process name: ''
+
+%MSG
+%MSG-i GetByLabelWithoutRegistration:  GGHAnalyzer:ggh 01-Dec-2015 15:32:38 CET  Run: 977 Event: 69
+::getByLabel without corresponding call to consumes or mayConsumes for this module.
+  type: std::vector<reco::Muon>
+  module label: muons
+  product instance name: ''
+  process name: ''
+
+%MSG
+%MSG-i GetByLabelWithoutRegistration:  GGHAnalyzer:ggh 01-Dec-2015 15:32:39 CET  Run: 977 Event: 69
+::getByLabel without corresponding call to consumes or mayConsumes for this module.
+  type: std::vector<reco::PFTau>
+  module label: hpsPFTauProducer
+  product instance name: ''
+  process name: 'RECO'
+
+%MSG
+%MSG-i GetByLabelWithoutRegistration:  GGHAnalyzer:ggh 01-Dec-2015 15:32:40 CET  Run: 977 Event: 69
+::getByLabel without corresponding call to consumes or mayConsumes for this module.
+  type: std::vector<reco::PFTau>
+  module label: hpsPFTauProducer
+  product instance name: ''
+  process name: 'CLEANJETS'
+
+%MSG
+%MSG-i GetByLabelWithoutRegistration:  GGHAnalyzer:ggh 01-Dec-2015 15:32:40 CET  Run: 977 Event: 69
+::getByLabel without corresponding call to consumes or mayConsumes for this module.
+  type: std::vector<reco::RecoTauPiZero>
+  module label: hpsPFTauProducer
+  product instance name: 'pizeros'
+  process name: ''
+
+%MSG
+%MSG-i GetByLabelWithoutRegistration:  GGHAnalyzer:ggh 01-Dec-2015 15:32:40 CET  Run: 977 Event: 69
+::getByLabel without corresponding call to consumes or mayConsumes for this module.
+  type: reco::PFTauDiscriminator
+  module label: hpsPFTauDiscriminationByLooseIsolationDBSumPtCorr
+  product instance name: ''
+  process name: 'CLEANJETS'
+
+%MSG
+%MSG-i GetByLabelWithoutRegistration:  GGHAnalyzer:ggh 01-Dec-2015 15:32:40 CET  Run: 977 Event: 69
+::getByLabel without corresponding call to consumes or mayConsumes for this module.
+  type: reco::PFTauDiscriminator
+  module label: hpsPFTauDiscriminationByMediumIsolationDBSumPtCorr
+  product instance name: ''
+  process name: 'CLEANJETS'
+
+%MSG
+%MSG-i GetByLabelWithoutRegistration:  GGHAnalyzer:ggh 01-Dec-2015 15:32:40 CET  Run: 977 Event: 69
+::getByLabel without corresponding call to consumes or mayConsumes for this module.
+  type: reco::PFTauDiscriminator
+  module label: hpsPFTauDiscriminationByTightIsolationDBSumPtCorr
+  product instance name: ''
+  process name: 'CLEANJETS'
+
+%MSG
+%MSG-i GetByLabelWithoutRegistration:  GGHAnalyzer:ggh 01-Dec-2015 15:32:40 CET  Run: 977 Event: 69
+::getByLabel without corresponding call to consumes or mayConsumes for this module.
+  type: reco::PFTauDiscriminator
+  module label: hpsPFTauDiscriminationByDecayModeFinding
+  product instance name: ''
+  process name: 'CLEANJETS'
+
+%MSG
+----- Begin Fatal Exception 01-Dec-2015 15:32:40 CET-----------------------
+An exception of category 'ProductNotFound' occurred while
+   [0] Processing run: 977 lumi: 1 event: 69
+   [1] Running path 'p2'
+   [2] Calling event method for module GGHAnalyzer/'ggh'
+Exception Message:
+Principal::getByLabel: Found zero products matching all criteria
+Looking for type: edm::ValueMap<edm::Ref<std::vector<reco::PFJet>,reco::PFJet,edm::refhelper::FindUsingAdvance<std::vector<reco::PFJet>,reco::PFJet> > >
+Looking for module label: CleanJets
+Looking for productInstanceName: jetValMap
+Looking for process: CLEANJETS
+   Additional Info:
+      [a] If you wish to continue processing events after a ProductNotFound exception,
+add "SkipEvent = cms.untracked.vstring('ProductNotFound')" to the "options" PSet in the configuration.
+
+----- End Fatal Exception -------------------------------------------------
+01-Dec-2015 15:32:40 CET  Closed file file:/afs/cern.ch/user/k/ktos/BoostedDiTau/CMSSW_7_4_1_patch1/src/BoostedTauAnalysis/CleanJets/OUTPUT/CleanJets_edmOuput.root
+<----------------Declared Canvases-------------->
+<----------------Formatted Canvases and Histos-------------->
+DONE
+
+TrigReport ---------- Event  Summary ------------
+TrigReport Events total = 1 passed = 0 failed = 1
+
+TrigReport ---------- Path   Summary ------------
+TrigReport  Trig Bit#   Executed     Passed     Failed      Error Name
+TrigReport     1    0          1          0          0          1 p2
+
+TrigReport -------End-Path   Summary ------------
+TrigReport  Trig Bit#   Executed     Passed     Failed      Error Name
+
+TrigReport ---------- Modules in Path: p2 ------------
+TrigReport  Trig Bit#    Visited     Passed     Failed      Error Name
+TrigReport     1    0          1          0          0          1 ggh
+
+TrigReport ---------- Module Summary ------------
+TrigReport    Visited   Executed     Passed     Failed      Error Name
+TrigReport          1          1          0          0          1 ggh
+TrigReport          0          0          0          0          0 TriggerResults
+
+TimeReport ---------- Event  Summary ---[sec]----
+TimeReport       event loop CPU/event = 1.165006
+TimeReport      event loop Real/event = 2.256548
+TimeReport     sum Streams Real/event = 2.141431
+TimeReport efficiency CPU/Real/thread = 0.516278
+
+TimeReport ---------- Path   Summary ---[Real sec]----
+TimeReport  per event     per exec  Name
+TimeReport   2.131096     2.131096  p2
+TimeReport  per event     per exec  Name
+
+TimeReport -------End-Path   Summary ---[Real sec]----
+TimeReport  per event     per exec  Name
+TimeReport  per event     per exec  Name
+
+TimeReport ---------- Modules in Path: p2 ---[Real sec]----
+TimeReport  per event    per visit  Name
+TimeReport   0.010731     0.010731  ggh
+TimeReport  per event    per visit  Name
+
+TimeReport ---------- Module Summary ---[Real sec]----
+TimeReport  per event     per exec    per visit  Name
+TimeReport   0.000000     0.000000     0.000000  TriggerResults
+TimeReport   0.010731     0.010731     0.010731  ggh
+TimeReport  per event     per exec    per visit  Name
+
+T---Report end!
+
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 Fatal Exception      -s PostProcessPath                        1        1
+    2 fileAction           -s file_close                             1        1
+    3 fileAction           -s file_open                              2        2
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 Fatal Exception      977/69                            
+    2 fileAction           PostEndRun                        
+    3 fileAction           pre-events       pre-events       
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+System                  4                   4

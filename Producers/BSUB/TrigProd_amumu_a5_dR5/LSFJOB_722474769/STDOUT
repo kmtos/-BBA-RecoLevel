@@ -1,0 +1,40 @@
+WARNING: Can't open /etc/lsbatch/batch/configdir/lsb.queues. Bailing out ...
+@(#)CERN job starter $Date: 2010/06/23 14:22:16 $
+Working directory is </pool/lsf/ktos/722474769> on <b65af48f46.cern.ch>
+
+/pool/lsf/ktos/722474769
+18-Nov-2015 09:20:29 CET  Initiating request to open file root://eoscms//eos/cms/store/user/ktos/RECO_Step3_amumu_a5/RECO_Step3_amumu_a5_360.root
+[2015-11-18 09:20:32.847484 +0100][Error  ][XRootD            ] [eoscms:1094] Handling error while processing kXR_open (file: /eos/cms/store/user/ktos/RECO_Step3_amumu_a5/RECO_Step3_amumu_a5_360.root, mode: 0660, flags: kXR_open_read kXR_async kXR_retstat ): [ERROR] Error response.
+%MSG-w XrdAdaptorInternal:  file_open 18-Nov-2015 09:20:32 CET pre-events
+Failed to open file at URL root://eoscms:1094//eos/cms/store/user/ktos/RECO_Step3_amumu_a5/RECO_Step3_amumu_a5_360.root.
+%MSG
+[2015-11-18 09:20:32.873102 +0100][Error  ][XRootD            ] [eoscms:1094] Handling error while processing kXR_open (file: /eos/cms/store/user/ktos/RECO_Step3_amumu_a5/RECO_Step3_amumu_a5_360.root?tried=, mode: 0660, flags: kXR_open_read kXR_async kXR_retstat ): [ERROR] Error response.
+%MSG-w XrdAdaptorInternal:  file_open 18-Nov-2015 09:20:32 CET pre-events
+Failed to open file at URL root://eoscms:1094//eos/cms/store/user/ktos/RECO_Step3_amumu_a5/RECO_Step3_amumu_a5_360.root?tried=.
+%MSG
+----- Begin Fatal Exception 18-Nov-2015 09:20:32 CET-----------------------
+An exception of category 'FileOpenError' occurred while
+   [0] Constructing the EventProcessor
+   [1] Constructing input source of type PoolSource
+   [2] Calling RootInputFileSequence::initFile()
+   [3] Calling StorageFactory::open()
+   [4] Calling XrdFile::open()
+Exception Message:
+Failed to open the file 'root://eoscms//eos/cms/store/user/ktos/RECO_Step3_amumu_a5/RECO_Step3_amumu_a5_360.root'
+   Additional Info:
+      [a] Input file root://eoscms//eos/cms/store/user/ktos/RECO_Step3_amumu_a5/RECO_Step3_amumu_a5_360.root could not be opened.
+      [b] XrdCl::File::Open(name='root://eoscms//eos/cms/store/user/ktos/RECO_Step3_amumu_a5/RECO_Step3_amumu_a5_360.root', flags=0x10, permissions=0660) => error '[ERROR] Server responded with an error: [3011] Unable to open file /eos/cms/store/user/ktos/RECO_Step3_amumu_a5/RECO_Step3_amumu_a5_360.root; No such file or directory
+' (errno=3011, code=400). No additional data servers were found.
+      [c] Last URL tried: root://eoscms:1094//eos/cms/store/user/ktos/RECO_Step3_amumu_a5/RECO_Step3_amumu_a5_360.root?tried=
+      [d] Problematic data server: eoscms:1094
+      [e] Disabled source: eoscms:1094
+----- End Fatal Exception -------------------------------------------------
+Will overwrite /store/user/ktos/TrigProd_amumu_a5_dR5/RECO_Step3_amumu_a5_TrigProd_360.root due to force flag.
+xrdcp: No such file or directory processing RECO_Step3_amumu_a5_TrigProd_360.root
+xrdcp exited with error code 2, exiting with the same code.
+
+Job finished at Wed Nov 18 09:20:40 CET 2015 on node 
+ under linux version Scientific Linux CERN SLC release 6.7 (Carbon)
+
+CERN statistics: This process used approximately : 0:00:38 KSI2K hours (38 KSI2K seconds)
+                 This process corresponds to     : 0:02:31 HS06  hours (151 HS06  seconds)
